@@ -1,0 +1,55 @@
+
+cfg = [];
+
+%general;
+cfg.filtertype = 'bandpass';
+cfg.dorectify = 'yes';
+cfg.dosmooth = 'yes';
+cfg.lowerfreq = 30;
+cfg.upperfreq = 300;
+cfg.rectifyms = 20;
+cfg.baselinelengthms = 50;
+cfg.trialstartms = 20;
+cfg.trialendms = 120;
+cfg.artifactthresh = 2;
+
+
+%acqknowledge;
+cfg.channel = 2;
+cfg.ttlchannels = [5 6 7 8 9 10 11 12];
+cfg.codes = [2 10 14 18 22 34 38];
+
+
+
+%psychlab;
+%cfg.channel = 1;
+%cfg.ttlchannel = 3;
+%cfg.codes = [164, 166, 168, 170, 172, 174, 180, 182, 184, 186, 188, 190]
+
+
+
+
+%other options
+%cfg.ttlchannels = [6 7 8 9 10 11 12 13];
+%cfg.wnlengthms = 45;
+%cfg.downinterp = 'no';
+%cfg.doblcentergraphraw = 'no';
+%cfg.filtertype = 'lowpass';
+%cfg.filtertype = 'highpass';
+
+
+
+
+%SCR;
+%cfg.downinterp = 'no';
+%cfg.dorectify = 'no';
+%cfg.dosmooth = 'no';
+%cfg.upperfreq = 3;
+%cfg.doblcentergraphraw = 'no';
+%cfg.filtertype = 'lowpass';
+%cfg.baselinelengthms = 2000;
+%cfg.trialendms = 8000;
+%cfg.channel = XXXX;
+
+
+
